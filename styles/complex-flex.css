@@ -6,6 +6,7 @@ img {
 .row {
 
     margin-bottom: 5px;
+
 }
 
 .second-row,
@@ -25,7 +26,7 @@ img {
     flex-direction: column;
 }
 
-.second-row-third-container>div {
+.second-row-third-container div {
     height: calc(50% - 5px/2);
     /* height: 200px; */
 }
@@ -38,4 +39,25 @@ img {
 
 .third-row>div {
     flex: 1;
+}
+
+/* Making responsive */
+/* Smaller device  */
+@media screen and (max-width:620px) {
+
+    .second-row,
+    .third-row {
+        flex-direction: column;
+    }
+
+    .third-row-second-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Medium device */
+@media screen and (min-width:621px) and (max-width:992px) {
+    .row {
+        height: 400px;
+    }
 }
