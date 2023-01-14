@@ -10,7 +10,6 @@
         .container {
             display: flex;
             gap: 10px;
-
         }
 
         .box {
@@ -29,11 +28,25 @@
             .box {
                 background-color: antiquewhite;
             }
+
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .box {
+                flex: 40%;
+                /* width: 25%; */
+            }
         }
 
         @media screen and (min-width:769px) and (max-width: 992px) {
+            .container {
+                flex-wrap: wrap;
+            }
+
             .box {
                 background-color: brown;
+                flex: 30%;
             }
         }
     </style>
